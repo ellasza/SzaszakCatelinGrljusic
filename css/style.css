@@ -101,7 +101,7 @@ header button {
 }
 .contenedor {
     display: flex;
-    width: 80%;
+    width: 100%;
 }
 .nav-categorias {
     width: 20%;
@@ -177,15 +177,16 @@ header button {
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
 
-.form-auth {
+.form1 {
     display: flex;
     flex-direction: column;
     padding: 30px;
     border: 1px solid white;
     background-color: #fff;
-    width: 1000px;
+    width: 800px;
     margin-top: 0;
     height: 1200px;
 }
