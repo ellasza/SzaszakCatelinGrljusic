@@ -195,6 +195,7 @@ header button {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    flex-direction: column;
 
 }
 .producto{
@@ -220,4 +221,28 @@ header button {
 }
 .contenedor{
     width: 100%;
+}
+.contenedor .nav-categorias {
+    width: 25%;
+}
+.contenedor .productos-random {
+    width: 100%;
+}
+
+.registro-orden {
+    display: flex;
+
+}
+
+.orden-busqueda {
+    display: flex;
+}
+
+.productos-busquedaa{
+    display: flex;
+}
+
+
+@media (max-widght: 450px) {
+
 }
