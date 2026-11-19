@@ -13,3 +13,4 @@ formBuscador.addEventListener("submit", function(event) {
         this.submit();
     }
 });
+
