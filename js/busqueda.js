@@ -1,9 +1,9 @@
 let qsBusqueda = location.search;
 let qsObjBusqueda = new URLSearchParams(qsBusqueda);
-let terminoBuscadp = qsObjBusqueda.get("buscador");
+let terminoBuscado = qsObjBusqueda.get("buscador");
 
 let tituloBusqueda = document.querySelector(".titulo-busqueda");
-let resultados = document.querySelector(".productos-busqueda")
+let resultados = document.querySelector(".productos-busquedaa")
 
 fetch(`https://dummyjson.com/products/search?q=${terminoBuscado}`)
     .then(function (response) {

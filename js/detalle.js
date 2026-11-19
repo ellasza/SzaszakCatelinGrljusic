@@ -14,7 +14,7 @@ let listaReviews = document.querySelector(".lista-reviews");
 
 fetch(`https://dummyjson.com/products/${idProducto}`)
     .then(function (response) {
-        return responsive.json();
+        return response.json();
     })
     .then(function (data) {
         fotoDetalle.src = data.thumbnail;
@@ -32,7 +32,11 @@ fetch(`https://dummyjson.com/products/${idProducto}`)
             marcaDetalle.innerText = `Marca: ${data.brand}`;
         }
 
-        for (let i = 0; i < data.reviews.lenght; i++) {
+        for (let i = 0; i < data.tags.length && i < 3; i ++) {
+            listaTags.innerHTML += `<li>${data.tags[i]}</li>`;
+        }
+
+        for (let i = 0; i < data.reviews.length; i++) {
             let review = data.reviews[i];
             let fecha = new Date(review.date).toLocaleDateString();
             listaReviews.innerHTML += `
