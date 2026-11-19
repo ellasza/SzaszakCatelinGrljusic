@@ -339,3 +339,20 @@ header button {
     }
 
 }
+
+.error-buscador {
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+}
+.errores p {
+    color: #b00020;
+    font-size: 14px;
+}
+.item-saludo {
+    color: #fff;
+}
+.item-saludo a {
+    margin-left: 8px;
+    text-decoration: underline;
+}
