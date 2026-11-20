@@ -6,9 +6,9 @@ fetch("https://dummyjson.com/products/categories")
     })
     .then(function (data) {
         for (let i = 0; i < data.length; i++) {
-            if (categoriasBelleza.includes(data[i].slug)) {
-                listaCategoria.innerHTML += `<li><a href="./categoria.html?categoria=${data[i].slug}">${data[i].name}</a></li>`;
-            }
+            
+            listaCategoria.innerHTML += `<li><a href="./categoria.html?categoria=${data[i].slug}">${data[i].name}</a></li>`;
+            
         }
     })
 
