@@ -10,5 +10,5 @@ if (linkLogout != null) {
         saludoHeader.style.display = "none";
         loginHeader.style.display = "block";
         registroHeader.style.display = "block";
-    })
+    });
 }

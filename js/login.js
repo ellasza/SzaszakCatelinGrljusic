@@ -24,4 +24,4 @@ formLogin.addEventListener("submit", function (event) {
         localStorage.setItem("email", emailLogin.value);
         location.href = "./index.html";
     }    
-})
+});

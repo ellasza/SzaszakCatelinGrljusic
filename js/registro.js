@@ -2,6 +2,7 @@ let formRegistro = document.querySelector(".form1");
 let emailRegistro = document.querySelector("#email");
 let passwordRegistro = document.querySelector("#password");
 let password2Registro = document.querySelector("#password2");
+let terminosRegistro = document.querySelector("#terminos");
 let erroresRegistro = document.querySelector(".errores");
 
 formRegistro.addEventListener("submit", function (event) {

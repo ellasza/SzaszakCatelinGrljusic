@@ -1,11 +1,9 @@
-let categoria1 = "smartphones";
-let categoria2 = "mobile-accessories";
-let seccion1 =
-document.querySelector(".seccion1");
-let seccion2 = 
-document.querySelector(".seleccion2");
+let categoria1 = "beauty";
+let categoria2 = "skin-care";
+let seccion1 = document.querySelector(".seccion1");
+let seccion2 = document.querySelector(".seleccion2");
 
-fetch(`https://dummyjson.com/products/category/${categoria1}?limit=10`)
+fetch(`https://dummyjson.com/products/category/${categoria1}`)
     .then(function (response) {
         return response.json();
     })
@@ -26,7 +24,7 @@ fetch(`https://dummyjson.com/products/category/${categoria1}?limit=10`)
         console.log("El error es: " + error);
     });
 
-fetch(`https://dummyjson.com/products/category/${categoria2}?limit=10`)
+fetch(`https://dummyjson.com/products/category/${categoria2}`)
     .then(function (response) {
         return response.json();
     })
